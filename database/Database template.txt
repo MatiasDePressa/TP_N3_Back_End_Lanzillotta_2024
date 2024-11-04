@@ -1,0 +1,46 @@
+-- Tabla Cursos
+CREATE TABLE Cursos (
+    id_curso INTEGER PRIMARY KEY AUTOINCREMENT,
+    anio INTEGER NOT NULL,
+    division TEXT NOT NULL
+);
+
+-- Tabla Materias
+CREATE TABLE Materias (
+    id_materia INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre_materia TEXT NOT NULL,
+    numero_materia INTEGER NOT NULL CHECK(numero_materia BETWEEN 0 AND 999),
+    logo_materia TEXT
+);
+
+-- Tabla intermedia CursoMateria para la relación de muchos a muchos
+CREATE TABLE CursoMateria (
+    id_curso INTEGER,
+    id_materia INTEGER,
+    PRIMARY KEY (id_curso, id_materia),
+    FOREIGN KEY (id_curso) REFERENCES Cursos(id_curso) ON DELETE CASCADE,
+    FOREIGN KEY (id_materia) REFERENCES Materias(id_materia) ON DELETE CASCADE
+);
+
+
+-- Insertar datos en la tabla Cursos
+INSERT INTO Cursos (anio, division) VALUES (1, 'A');
+INSERT INTO Cursos (anio, division) VALUES (1, 'B');
+INSERT INTO Cursos (anio, division) VALUES (2, 'A');
+INSERT INTO Cursos (anio, division) VALUES (3, 'C');
+
+-- Insertar datos en la tabla Materias
+INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Matemática', 101, 'logos/matematica.png');
+INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Lengua', 102, 'logos/lengua.png');
+INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Ciencias', 103, 'logos/ciencias.png');
+INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Historia', 104, 'logos/historia.png');
+
+-- Insertar datos en la tabla intermedia CursoMateria
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (1, 1);  -- Curso 1A, Materia Matemática
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (1, 2);  -- Curso 1A, Materia Lengua
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (2, 1);  -- Curso 1B, Materia Matemática
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (2, 3);  -- Curso 1B, Materia Ciencias
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (3, 1);  -- Curso 2A, Materia Matemática
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (3, 4);  -- Curso 2A, Materia Historia
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (4, 2);  -- Curso 3C, Materia Lengua
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (4, 3);  -- Curso 3C, Materia Ciencias
