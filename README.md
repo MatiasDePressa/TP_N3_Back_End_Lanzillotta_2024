@@ -1,6 +1,6 @@
 # Trabajo Practico N°3: Back-End
 
-*Trabajo Desarrollado Por Agustin Sebriano, Emanuel Sebriano, Nueheun Matos y Matias De Pressa, Estudiantes de 7°4° Modalidad Programacion, Turno Noche, Ciclo Lectivo 2024, Profesor Profesor Hernán Lanzillotta. Como Proyecto final de la materia Proyecto de Implementación de sitio web dinamico*
+*Trabajo Desarrollado Por Agustin Sebriano, Emanuel Sebriano, Nehuen Matos y Matias De Pressa, Estudiantes de 7°4° Modalidad Programacion, Turno Noche, Ciclo Lectivo 2024, Profesor Hernán Lanzillotta. Como Proyecto final de la materia Proyecto de Implementación de sitios web dinamicos*
 
 
 
