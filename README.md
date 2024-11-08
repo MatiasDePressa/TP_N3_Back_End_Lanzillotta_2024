@@ -718,7 +718,7 @@ Una vez cargada la base de datos, puedes realizar diferentes acciones:
 ### Flujo de archivos
 
 
-graph TD
+flowchart LR
     A[index.html] -- "Enlace a" --> B[styles/index.css]
     A -- "Redirección a" --> C[php/Formulario_Todas_Materias.php]
     A -- "Redirección a" --> D[php/Formulario_Modificar_Materia.php]
