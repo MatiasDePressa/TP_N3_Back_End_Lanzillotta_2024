@@ -1,7 +1,7 @@
 <?php
 class basededatos extends SQLite3 {
     public function __construct() {
-        $this->open('materias.sqlite');
+        $this->open('.\test.sqlite');
     }
 }
 
