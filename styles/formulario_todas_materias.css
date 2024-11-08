@@ -46,3 +46,8 @@ footer{
         text-align: center;
     }
 }
+#volver{
+    margin: 40px 0px 0px 50px;
+    padding: 3px;
+    border-radius: 5px;
+}

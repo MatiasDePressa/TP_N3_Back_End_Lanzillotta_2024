@@ -27,17 +27,3 @@
 ### Como Configurar las Dependencias:
 
 
-
-## Notas Para Despues, Acordate de sacarlas Mati
-
-- Explicar como funcioa el programación
-
-- Explicar como ejecutarlo
-
-- añadir una base de datos sql en caso de error
-
-- añadir un worker o trigger en un archivo a parte para testear la conexion como primer paso
-
-- (Database template.txt, es el codigo SQL de la base de datos. Lo mostramos en un archivo txt debido a que el codigo SQLite es completamente cerrado, y para poder ver y acceder a su codigo se debe hacer mediante una herramiente externa como SQLiteStudio y SQLite3 (Ambas de codigo abierto))
-
-- Explicar que sucede en caso de erro del sevidor con SQLite (lo del ; en el ini del xammp) 

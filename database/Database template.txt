@@ -1,3 +1,8 @@
+Este Archivo existe para poder ver la estructura de la base de datos
+ya que SQLite3 es un sistema de gestión de bases de datos en memoria
+y al almacenarse localmente no se puede acceder al codigo manualmente
+
+
 -- Tabla Cursos
 CREATE TABLE Cursos (
     id_curso INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -30,17 +35,17 @@ INSERT INTO Cursos (anio, division) VALUES (2, 'A');
 INSERT INTO Cursos (anio, division) VALUES (3, 'C');
 
 -- Insertar datos en la tabla Materias
-INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Matemática', 101, 'logos/matematica.png');
-INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Lengua', 102, 'logos/lengua.png');
-INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Ciencias', 103, 'logos/ciencias.png');
-INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Historia', 104, 'logos/historia.png');
+INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Matemática', 101, '../img/matematica.png');
+INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Lengua', 102, '../img/lengua.png');
+INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Ciencias', 103, '../img/ciencias.png');
+INSERT INTO Materias (nombre_materia, numero_materia, logo_materia) VALUES ('Historia', 104, '../img/historia.png');
 
 -- Insertar datos en la tabla intermedia CursoMateria
-INSERT INTO CursoMateria (id_curso, id_materia) VALUES (1, 1);  -- Curso 1A, Materia Matemática
-INSERT INTO CursoMateria (id_curso, id_materia) VALUES (1, 2);  -- Curso 1A, Materia Lengua
-INSERT INTO CursoMateria (id_curso, id_materia) VALUES (2, 1);  -- Curso 1B, Materia Matemática
-INSERT INTO CursoMateria (id_curso, id_materia) VALUES (2, 3);  -- Curso 1B, Materia Ciencias
-INSERT INTO CursoMateria (id_curso, id_materia) VALUES (3, 1);  -- Curso 2A, Materia Matemática
-INSERT INTO CursoMateria (id_curso, id_materia) VALUES (3, 4);  -- Curso 2A, Materia Historia
-INSERT INTO CursoMateria (id_curso, id_materia) VALUES (4, 2);  -- Curso 3C, Materia Lengua
-INSERT INTO CursoMateria (id_curso, id_materia) VALUES (4, 3);  -- Curso 3C, Materia Ciencias
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (1, 1);  
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (1, 2);  
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (2, 1);  
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (2, 3);  
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (3, 1);  
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (3, 4);  
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (4, 2);  
+INSERT INTO CursoMateria (id_curso, id_materia) VALUES (4, 3);  
