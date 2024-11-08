@@ -717,7 +717,7 @@ Una vez cargada la base de datos, puedes realizar diferentes acciones:
 
 ### Flujo de archivos
 
-
+```mermaid
 flowchart LR
     A[index.html] -- "Enlace a" --> B[styles/index.css]
     A -- "Redirección a" --> C[php/Formulario_Todas_Materias.php]
@@ -732,6 +732,8 @@ flowchart LR
     H -- "Imagen" --> J[img/Frente_Chacabuco.jpg]
     G -- "Incluye" --> K[conectar_database.php]
     E -- "Incluye" --> K[conectar_database.php]
+    K -- "Conexión con" --> I[Materias.sqlite]
+```
 
 
 ## Tecnologias
