@@ -30,7 +30,6 @@
     - [Flujo de archivos](#flujo-de-archivos)
   - [Tecnologias](#tecnologias)
     - [Tecnologias Utilizadas:](#tecnologias-utilizadas)
-    - [Tecnologías Utilizadas:](#tecnologías-utilizadas)
       - [1. **HTML (Hypertext Markup Language)**](#1-html-hypertext-markup-language)
       - [2. **CSS (Cascading Style Sheets)**](#2-css-cascading-style-sheets)
       - [3. **PHP (Hypertext Preprocessor)**](#3-php-hypertext-preprocessor)
@@ -718,22 +717,21 @@ Una vez cargada la base de datos, puedes realizar diferentes acciones:
 
 ### Flujo de archivos
 
-flowchart LR
 
-    graph TD
-        A[index.html] -- "Enlace a" --> B[styles/index.css]
-        A -- "Redirección a" --> C[php/Formulario_Todas_Materias.php]
-        A -- "Redirección a" --> D[php/Formulario_Modificar_Materia.php]
-        C -- "Incluye" --> E[scripts/todas_materias.php]
-        C -- "Enlace a" --> F[styles/formulario_todas_materias.css]
-        D -- "Incluye" --> G[scripts/modificar_materias.php]
-        D -- "Enlace a" --> H[styles/formulario_modifica_materia.css]
-        E -- "Conexión con" --> I[Materias.sqlite]
-        F -- "Imagen" --> J[img/Frente_Chacabuco.jpg]
-        G -- "Conexión con" --> I[Materias.sqlite]
-        H -- "Imagen" --> J[img/Frente_Chacabuco.jpg]
-        G -- "Incluye" --> K[conectar_database.php]
-        E -- "Incluye" --> K[conectar_database.php]
+graph TD
+    A[index.html] -- "Enlace a" --> B[styles/index.css]
+    A -- "Redirección a" --> C[php/Formulario_Todas_Materias.php]
+    A -- "Redirección a" --> D[php/Formulario_Modificar_Materia.php]
+    C -- "Incluye" --> E[scripts/todas_materias.php]
+    C -- "Enlace a" --> F[styles/formulario_todas_materias.css]
+    D -- "Incluye" --> G[scripts/modificar_materias.php]
+    D -- "Enlace a" --> H[styles/formulario_modifica_materia.css]
+    E -- "Conexión con" --> I[Materias.sqlite]
+    F -- "Imagen" --> J[img/Frente_Chacabuco.jpg]
+    G -- "Conexión con" --> I[Materias.sqlite]
+    H -- "Imagen" --> J[img/Frente_Chacabuco.jpg]
+    G -- "Incluye" --> K[conectar_database.php]
+    E -- "Incluye" --> K[conectar_database.php]
 
 
 ## Tecnologias
@@ -744,9 +742,6 @@ flowchart LR
 - Programacion: PHP
 - Servidor: Apache
 
-¡Claro! Aquí tienes una explicación de las tecnologías utilizadas en el trabajo que has compartido, incluyendo HTML, CSS, PHP y SQLite. Cada una de estas tecnologías tiene un rol específico y contribuye de manera única al funcionamiento del proyecto web.
-
-### Tecnologías Utilizadas:
 
 #### 1. **HTML (Hypertext Markup Language)**
 **¿Qué es?**
@@ -787,7 +782,6 @@ flowchart LR
 - No requiere una configuración de servidor de base de datos separada, lo que simplifica la configuración y el mantenimiento.
 - Utiliza comandos SQL para interactuar con la base de datos, permitiendo la ejecución de consultas, la inserción de datos, la actualización de registros y la eliminación de información.
 
-¡Claro! Apache HTTP Server es uno de los servidores web más populares y ampliamente utilizados en el mundo. Aquí tienes una explicación sobre qué es y cómo funciona:
 
 #### 5. **Apache**
 **¿Qué es?**
