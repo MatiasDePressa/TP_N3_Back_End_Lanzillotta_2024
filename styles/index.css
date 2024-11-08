@@ -5,9 +5,13 @@ body {
     margin: 0;
     padding: 0;
 }
-
+div{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
 h1 {
-    background-color: #1a41ad;
+    background-color: #2c58d3;
     color: white;
     padding: 20px 0;
     margin: 0;
@@ -24,13 +28,15 @@ nav ul li {
     margin: 0 15px;
     background-color: #1a41ad;
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #c2b2b2;
     font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
 }
 
 nav ul li a:hover {
@@ -52,4 +58,5 @@ img{
     height: 30vh;
     object-fit: cover; 
     margin-bottom: 50px;
+    
 }

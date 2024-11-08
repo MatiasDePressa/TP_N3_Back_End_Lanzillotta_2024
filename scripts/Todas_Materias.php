@@ -18,3 +18,12 @@ function obtenerTodasLasMaterias($db) {
 }
 
 $materias = obtenerTodasLasMaterias($db);
+
+function contarTodasLasMaterias($db) {
+    $sql = "SELECT COUNT(id_materia) as total FROM Materias"; 
+    $resultado = $db -> query($sql);
+    $fila = $resultado->fetchArray(SQLITE3_ASSOC); //devuelve
+    return $fila['total'];
+}
+
+$contadorMaterias = contarTodasLasMaterias($db);
