@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODAS LAS MATERIAS</title>
+    <title>Listado de Materias</title>
     <link rel="stylesheet" href="../styles/TodasMaterias.css">
 </head>
 <body>
     <img src="../img/Frente_Chacabuco.jpg" alt="Escuela Chacabuco Frente">
     <form method="post">
         <table>
-            <caption>
-                Listado de las Materias
-            </caption>
+            <caption>Listado de las Materias</caption>
             <thead>
                 <tr>
                     <th>Nro de Materia</th>
@@ -21,18 +19,30 @@
                     <th>División</th>
                 </tr>
             </thead>
-            <tbody id="materias-list">
+            <tbody>
+                <?php
+                include '../scripts/Todas_Materias.php';
+                $contador = 0;
+                while ($fila = $materias->fetchArray(SQLITE3_ASSOC)) {
+                    echo "<tr>";
+                    echo "<td>" . htmlspecialchars($fila['numero_materia']) . "</td>";
+                    echo "<td>" . htmlspecialchars($fila['nombre_materia']) . "</td>";
+                    echo "<td>" . htmlspecialchars($fila['anio']) . "</td>";
+                    echo "<td>" . htmlspecialchars($fila['division']) . "</td>";
+                    echo "</tr>";
+                    $contador++;
+                }
+                ?>
             </tbody>
         </table>
-        <p id="contador-materias">Total de materias: <span id="total-materias">0</span></p>
+        <center><p><b>Total de materias: <span><?php echo $contador; ?></span></b></p></center>
     </form>
-    
+
     <footer>
         <hr>
         <p><b>E.E.S.T N°6 CHACABUCO – MORÓN (7° 4° año 2024)</b></p>
         <p>Proyecto de Implementación de sitios web dinámicos</p>
-        <p>Autores: Alarcon - Baez - Cabrera - Iacobacci - Cajal - Cari - Casagerone - Castellano - Corbalan - Cuba - Datri - Dangelo - De pressa - Dicerbo - Dominguez - Donnarumma - Eiras - Francisco - Gallardo - Garcia - Iannone - Ledesma - Leyes - Lezcano - ;Loiacono - Lucero - Lujan - Luque - Marrapodi - Matos - Mosquera - Pavon - Portillo - Potaschnik - Romero - Salmeron - Scaramuzza - Sebriano A. - Sebriano E. - Speranza</p>
+        <p>Autores: Agustin Sebriano, Emanuel Sebriano Brandan, Nehuen Matos, Matias De Pressa</p>
     </footer>
-
 </body>
 </html>

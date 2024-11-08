@@ -47,7 +47,7 @@
         <hr>
         <p><b>E.E.S.T N°6 CHACABUCO – MORÓN (7° 4° año 2024)</b></p>
         <p>Proyecto de Implementación de sitios web dinámicos</p>
-        <p>Autores: Alarcon - Baez - Cabrera - Iacobacci - Cajal - Cari - Casagerone - Castellano - Corbalan - Cuba - Datri - Dangelo - De pressa - Dicerbo - Dominguez - Donnarumma - Eiras - Francisco - Gallardo - Garcia - Iannone - Ledesma - Leyes - Lezcano - ;Loiacono - Lucero - Lujan - Luque - Marrapodi - Matos - Mosquera - Pavon - Portillo - Potaschnik - Romero - Salmeron - Scaramuzza - Sebriano A. - Sebriano E. - Speranza</p>
+        <p>Autores: Agustin Sebriano, Emanuel Sebriano Brandan, Nehuen Matos, Matias De Pressa</p>
     </footer>
 
     <script src="../scripts/ValidacionesMateria.js"></script>
