@@ -17,7 +17,8 @@
     - [Propósitos:](#propósitos)
   - [Manual de usuario](#manual-de-usuario)
     - [Como ejecutar el programa](#como-ejecutar-el-programa)
-    - [Como activar SQLite3 en Apache](#como-activar-sqlite3-en-apache)
+    >[!IMPORTANT]
+    >- [Como activar SQLite3 en Apache](#como-activar-sqlite3-en-apache)
     - [Como ver la base de datos](#como-ver-la-base-de-datos)
   - [Funcionamiento del programa](#funcionamiento-del-programa)
     - [**Materias.sqlite**](#materiassqlite)
