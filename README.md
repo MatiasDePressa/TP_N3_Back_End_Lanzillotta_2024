@@ -10,9 +10,9 @@
 
 
 
-## Indice:
+## Indice
 - [Trabajo Practico N°3: Back-End](#trabajo-practico-n3-back-end)
-  - [Indice:](#indice)
+  - [Indice](#indice)
   - [Descripcion](#descripcion)
     - [Propósitos:](#propósitos)
   - [Manual de usuario](#manual-de-usuario)
