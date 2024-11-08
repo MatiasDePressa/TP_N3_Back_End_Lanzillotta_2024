@@ -120,8 +120,8 @@ Este sistema es útil para mantener actualizada la información académica, aseg
 6. Vuelve a encender el servidor  
    ![7](/archivos%20para%20el%20readme/8.png)
 
-7. La conexion con la base de datos ya funciona 🥳🥳
-   ![8](/archivos%20para%20el%20readme/9.png)
+7. La conexion con la base de datos ya funciona 🥳🥳  
+   ![8](/archivos%20para%20el%20readme/9.PNG)
 
 ### Como ver la base de datos
 
